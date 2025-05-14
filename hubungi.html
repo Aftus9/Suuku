@@ -3,22 +3,21 @@
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
-    <title>Hubungi Kami - Portal Info</title>
+    <title>Hubungi Kami</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Hubungi Kami</h1>
-        <nav>
-            <a href="index.html">Utama</a>
-            <a href="kesihatan.html">Kesihatan</a>
-        </nav>
     </header>
     <main>
         <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label>Nama:<br><input type="text" name="name" required></label><br><br>
-            <label>Emel:<br><input type="email" name="_replyto" required></label><br><br>
-            <label>Mesej:<br><textarea name="message" required></textarea></label><br><br>
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Emel:</label><br>
+            <input type="email" id="email" name="_replyto" required><br><br>
+            <label for="message">Mesej:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
             <button type="submit">Hantar</button>
         </form>
     </main>
